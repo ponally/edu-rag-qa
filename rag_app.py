@@ -6,8 +6,12 @@ from langchain_classic.chains import ConversationalRetrievalChain
 from langchain_classic.memory import ConversationBufferMemory
 from langchain_openai import ChatOpenAI
 
+from dotenv import load_dotenv
+import os
+load_dotenv()
+API_KEY = os.getenv("DEEPSEEK_API_KEY")
+
 # ---- 配置 DeepSeek ----
-API_KEY = "sk-3c051f3bc5e4411898221a3012259e80"
 BASE_URL = "https://api.deepseek.com"
 
 # ---- 1. 加载文档 ----
