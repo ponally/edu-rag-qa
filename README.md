@@ -88,3 +88,5 @@ python rag_app.py
 | ConversationBufferMemory 完整保存历史，长对话 Prompt 过长 | 换用 ConversationSummaryMemory 压缩历史 |
 | 缺乏答案质量评估体系 | 引入 RAGAs 框架量化 Faithfulness、Answer Relevancy、Context Recall |
 | 流式接口暂不支持多轮对话历史 | 将对话历史管理与流式生成结合，实现完整流式多轮对话 |
+
+已引入RAGAs评估框架建立基线（Faithfulness=0.950, Context Recall=1.000, Answer Relevancy=0.685），下一步针对Answer Relevancy优化
